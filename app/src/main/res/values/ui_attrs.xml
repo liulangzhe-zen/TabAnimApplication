@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <declare-styleable name="Ui_LottieTabView">
+        <attr name="text_selected_color" format="color"/>
+        <attr name="text_normal_color" format="color"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="lottie_path" format="string"/>
+        <attr name="icon_normal" format="reference"/>
+        <attr name="tab_selected" format="boolean"/>
+        <attr name="tab_name" format="string"/>
+
+
+
+        <attr name="top_bulge" format="boolean"/>
+    </declare-styleable>
+
+
+</resources>

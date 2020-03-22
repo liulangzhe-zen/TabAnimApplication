@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/ui_A3A3A3"
+            android:layout_above="@+id/ll_bg_bootom_bar"/>
+
+        <LinearLayout
+            android:id="@+id/ll_bg_bootom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@android:color/white">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent">
+
+            <com.basics.myapplication.widget.LottieTabView
+                android:id="@+id/tab_view_main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:icon_normal="@mipmap/soye"
+                app:lottie_path="home.json"
+                app:tab_name="首页"
+                app:tab_selected="true"
+                app:text_normal_color="@color/colorPrimary"
+                app:text_selected_color="@color/ui_A3A3A3"
+                app:text_size="9sp" />
+
+            <com.basics.myapplication.widget.LottieTabView
+                android:id="@+id/tab_view_msg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:icon_normal="@mipmap/fl"
+                app:lottie_path="member.json"
+                app:tab_name="消息"
+                app:tab_selected="false"
+                app:text_normal_color="@color/colorPrimary"
+                app:text_selected_color="@color/colorAccent"
+                app:text_size="9sp" />
+
+            <com.basics.myapplication.widget.LottieTabView
+                android:id="@+id/tab_view_deal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:icon_normal="@mipmap/gwc"
+                app:lottie_path="shopping_cart.json"
+                app:tab_name="交易"
+                app:tab_selected="false"
+                app:top_bulge="true"
+                app:text_normal_color="@color/colorPrimary"
+                app:text_selected_color="@color/colorAccent"
+                app:text_size="9sp" />
+
+            <com.basics.myapplication.widget.LottieTabView
+                android:id="@+id/tab_view_mine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:icon_normal="@mipmap/wd"
+                app:lottie_path="trade.json"
+                app:tab_name="我的"
+                app:tab_selected="false"
+                app:text_normal_color="@color/colorPrimary"
+                app:text_selected_color="@color/colorAccent"
+                app:text_size="9sp" />
+
+            <com.basics.myapplication.widget.LottieTabView
+                android:id="@+id/tab_view_min1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:icon_normal="@mipmap/wd"
+                app:lottie_path="trade.json"
+                app:tab_name="我的"
+                app:tab_selected="false"
+                app:text_normal_color="@color/colorPrimary"
+                app:text_selected_color="@color/colorAccent"
+                app:text_size="9sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
